@@ -3,15 +3,13 @@ import "./Cover.css";
 import Container from 'react-bootstrap/Container';
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
-import CardDeck from "react-bootstrap/CardDeck";
 
 
 const Cover = props=>(
     <div>
         <div className="overlay">
             <Container>
-                <CardDeck>
-                    <Card style={{ width: '18rem' }} className="bg-dark text-white">
+                    <Card className="card bg-dark text-white" style={{ width: '18rem', display:'inline-block' }}>
                         <Card.Img src="./assets/images/stock1.jpg" alt="Card image" />
                         <Card.ImgOverlay>
                             <Card.Title>Profile</Card.Title>
@@ -20,7 +18,7 @@ const Cover = props=>(
                             </Card.Text>
                         </Card.ImgOverlay>
                     </Card>
-                    <Card style={{ width: '18rem' }} className="bg-dark text-dark">
+                    <Card className="card bg-dark text-dark" style={{ width: '18rem', display:'inline-block' }}>
                         <Card.Img src="./assets/images/stock2.jpg" alt="Card image" />
                         <Card.ImgOverlay>
                             <Card.Title>Skills</Card.Title>
@@ -29,7 +27,6 @@ const Cover = props=>(
                             </Card.Text>
                         </Card.ImgOverlay>
                     </Card>
-                </CardDeck>
             </Container>
         </div>
     
@@ -37,7 +34,7 @@ const Cover = props=>(
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="./assets/images/auba.jpg"
+                src="./assets/images/arsenal5.jpg"
                 alt="First slide"
                 />
                 <Carousel.Caption>
@@ -47,7 +44,7 @@ const Cover = props=>(
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src='./assets/images/arsenal.jpg'
+                src='./assets/images/nigeria.jpg'
                 alt="Third slide"
                 />
 
@@ -58,7 +55,7 @@ const Cover = props=>(
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="./assets/images/gressel.jpg"
+                src="./assets/images/london.jpg"
                 alt="Third slide"
                 />
 
