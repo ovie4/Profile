@@ -9,20 +9,20 @@ const Cover = props=>(
     <div>
         <div className="overlay">
             <Container>
-                    <Card className="card bg-dark text-white" style={{ width: '18rem', display:'inline-block' }}>
+                    <Card className="card bg-dark text-white" style={{ width: '9rem', display:'inline-block' }}>
                         <Card.Img src="./assets/images/stock1.jpg" alt="Card image" />
                         <Card.ImgOverlay>
                             <Card.Title>Profile</Card.Title>
-                            <Card.Text>
+                            <Card.Text style={{fontSize:'.5em'}}>
                                 A brief overview of Ovie
                             </Card.Text>
                         </Card.ImgOverlay>
                     </Card>
-                    <Card className="card bg-dark text-dark" style={{ width: '18rem', display:'inline-block' }}>
+                    <Card className="card bg-dark text-dark" style={{ width: '9rem', display:'inline-block' }}>
                         <Card.Img src="./assets/images/stock2.jpg" alt="Card image" />
                         <Card.ImgOverlay>
                             <Card.Title>Skills</Card.Title>
-                            <Card.Text>
+                            <Card.Text style={{fontSize:'.5em'}}>
                                 Check out what I can do!
                             </Card.Text>
                         </Card.ImgOverlay>
@@ -38,7 +38,6 @@ const Cover = props=>(
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>Aubameyang</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -49,7 +48,6 @@ const Cover = props=>(
                 />
 
                 <Carousel.Caption>
-                <h3>Arsenal</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -60,7 +58,6 @@ const Cover = props=>(
                 />
 
                 <Carousel.Caption>
-                <h3>Gressel</h3>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

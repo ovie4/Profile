@@ -8,28 +8,28 @@ import Col from "react-bootstrap/Col";
 import "./Experience.css";
 
 const Experience=props=>(
-    <Container>
+    <Container className="container">
         <Tabs defaultActiveKey="edu" id="uncontrolled-tab-example">
             <Tab eventKey="edu" title="Education">
                 <ul>
                     <li>
                         <Row>
                             <Col sm={4}>
-                                <span>Nov 2017-Feb 2018</span>
+                                <strong>Nov 2017-Feb 2018</strong>
                                 <br />
                                 <span><i>Georgia Institute of Technology</i></span>
                                 <br />
                                 <span><i>Full Stack Web Development</i></span>
                             </Col>
                             <Col sm={8}>
-                                <p>Spent 3 months obtaining a certificate in Fell Stack Web Development from Georgia Tech. Primary focus on the MERN stack, with additional work in algorithms</p>
+                                <p>Spent 3 months obtaining a certificate in Full Stack Web Development from Georgia Tech. Primary focus on the MERN stack, with additional work in algorithms</p>
                             </Col>
                         </Row>
                     </li>
                     <li>
                         <Row>
                             <Col sm={4}>
-                                <span><strong>Aug 2004-May 2009</strong></span>
+                                <span><strong>Aug 2004-May 2008</strong></span>
                                 <br />
                                 <span><i>Cornell University</i></span>
                                 <br />
@@ -63,7 +63,7 @@ const Experience=props=>(
         </Tabs>
         <Row>
             <Col>
-                <p>What I know/What I'm learning</p>
+                <strong><i>What I know/What I'm learning</i></strong>
             </Col>
         </Row>
     </Container>
