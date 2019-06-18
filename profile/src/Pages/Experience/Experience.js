@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 import "./Experience.css";
 
 const Experience=props=>(
-    <Container className="container">
+    <Container className="container" style={props.style}>
         <Tabs defaultActiveKey="edu" id="uncontrolled-tab-example">
             <Tab eventKey="edu" title="Education">
                 <ul>

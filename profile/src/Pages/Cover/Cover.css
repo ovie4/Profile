@@ -12,10 +12,18 @@
     color:#fff;
     position:absolute;
     z-index:12;
-    top:20%;
     left:0;
+    right:0;
     width:100%;
     text-align:center;
   }
 
+
+  .downButton{
+    position: absolute;
+    bottom: 0%;
+    right: 0%
+  }
+
+  
   

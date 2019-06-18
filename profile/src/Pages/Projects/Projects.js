@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 
 
 const Projects=props=>(
-    <Container className="container">
+    <Container className="container" style={props.style}>
         <Row>
             <Col>
                 <strong><i><u>Projects</u></i></strong>

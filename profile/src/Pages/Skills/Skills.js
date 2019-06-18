@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Skills=props=>(
-    <Container className="container">
+    <Container className="container" style={props.style}>
         <Row>
             <Col>
                 <ul>

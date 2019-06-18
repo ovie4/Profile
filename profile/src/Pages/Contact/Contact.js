@@ -8,7 +8,7 @@ import Figure from 'react-bootstrap/Figure';
 
 
 const Contact=props=>(
-    <Container className="container">
+    <Container className="container" style={props.style}>
         <Row>
             <Col>
                 <h3><u><i>Contact Me</i></u></h3>

@@ -8,7 +8,7 @@ import "./Profile.css";
 
 
 const Profile=props=>(
-    <Container className="container">
+    <Container className="container" style={props.style}>
         <Row>
             <Col>
                 <h4><u>Ovie Omene</u></h4>
