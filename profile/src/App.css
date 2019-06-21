@@ -1,6 +1,15 @@
+
+
 .App {
   text-align: center;
+  
 }
+
+.allPages{
+  background-image: url("./utils/backgrounds/vitalis-hirschmann-504920-unsplash.jpg");
+  background-size: contain
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -9,10 +18,9 @@
 }
 
 .sideNav{
-  position: fixed;
-  top: 55px;
-  z-index: 1
-  
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25vh;
 }
 
 .App-header {

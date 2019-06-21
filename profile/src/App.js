@@ -1,16 +1,15 @@
 import React,{Component} from 'react';
 import './App.css';
-import {Row,Col,Nav,Container} from 'react-bootstrap';
-import Cover from "./Pages/Cover";
-import Profile from "./Pages/Profile";
-import Experience from "./Pages/Experience";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faStar, faCoffee } from '@fortawesome/free-solid-svg-icons';
-import Skills from "./Pages/Skills";
-import Projects from './Pages/Projects';
-import Contact from './Pages/Contact';
+import {Row,Col,Jumbotron} from 'react-bootstrap';
+import { BrowserRouter as Router} from "react-router-dom";
+import Cover from "./Components/Pages/Cover";
+import Profile from "./Components/Pages/Profile";
+import Experience from "./Components/Pages/Experience";
+import Skills from "./Components/Pages/Skills";
+import Projects from './Components/Pages/Projects';
+import Contact from './Components/Pages/Contact';
+import SideNav from './Components/SideNav';
 
-library.add(faStar,faCoffee);
 
 
 
@@ -18,63 +17,67 @@ class App extends Component{
 
   state={
     style:{
-      display:"none"
+      display:"none",
     }
+    
   }
   
 
-  handleButton=event=>{
+  handleButton=()=>{
     this.setState({style:{display:'block'}});
+    //scroll to profile
   };
+
+  handleNav=eKey=>{
+    console.log(eKey);
+    
+  }
 
 
   render(){
     return (
       <div className="App">
-            <Cover 
-              handleButton={this.handleButton}>
-            </Cover>
-        <Container style={this.state.style}>
-          <Row>
-            <Col sm={10}>
-              <Row>
-                <Col>
-                  <Profile></Profile>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Experience></Experience>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Skills></Skills>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Projects></Projects>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Contact></Contact>
-                </Col>
-              </Row>
-            </Col>
-            <Col sm={2}>
-              <Nav defaultActiveKey="/home" className="flex-column justify-content-end sideNav">
-                <Nav.Link href="/home">Active</Nav.Link>
-                <Nav.Link eventKey="link-1">Link</Nav.Link>
-                <Nav.Link eventKey="link-2">Link</Nav.Link>
-                <Nav.Link eventKey="disabled">
-                  Disabled
-                </Nav.Link>
-              </Nav>
-            </Col>
-          </Row>
-        </Container>
+        <Cover 
+          handleButton={this.handleButton}>
+        </Cover>
+        <Router>
+          <Jumbotron fluid style={this.state.style}>
+            <Row className='allPages'>
+              <Col sm={10}>
+                <Row id='profile'>
+                  <Col>
+                    <Profile></Profile>
+                  </Col>
+                </Row>
+                <Row id='experience'>
+                  <Col>
+                    <Experience></Experience>
+                  </Col>
+                </Row>
+                <Row id='skills'>
+                  <Col>
+                    <Skills></Skills>
+                  </Col>
+                </Row>
+                <Row id='projects'>
+                  <Col>
+                    <Projects></Projects>
+                  </Col>
+                </Row>
+                <Row id='contact'>
+                  <Col>
+                    <Contact></Contact>
+                  </Col>
+                </Row>
+              </Col>
+              <Col sm={2}>
+                <SideNav></SideNav>
+                
+              </Col>
+            </Row>
+              
+          </Jumbotron>
+        </Router>
       </div>
     );
   }
