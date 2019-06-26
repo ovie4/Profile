@@ -4,45 +4,54 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
+import "./Projects.css";
+
 
 
 const Projects=props=>(
-    <Container className="container" style={props.style}>
+    <Container className="container">
         <Row>
             <Col>
-                <strong><i><u>Projects</u></i></strong>
-                <br />
-                <a href='https://github.com/ovie4' target="_blank" rel="noopener noreferrer">My Github</a>
+                <h3><i>Projects</i></h3>
             </Col>
         </Row>
         <Row>
             <Col>
                 <CardDeck>
-                    <Card>
-                        <Card.Img variant="top" src="./assets/images/Gathering2.jpg" />
-                        <Card.Body>
-                        <Card.Title>21Delmont.com</Card.Title>
-                        <Card.Text>
-                            Full stack property management site for mostly dealing with work orders and streamlining property management,maintenance and tenant interaction.
-                        </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                        <a href="http://www.21delmont.com">Visit Site</a>
-                        </Card.Footer>
+                    <Card className="bg-dark text-white">
+                        <Card.Img src="./assets/images/Gathering2.jpg" alt="Card image" />
+                        <Card.ImgOverlay>
+                            <Card.Title>
+                                <a href="http://www.21delmont.com" target='_blank' rel="noopener noreferrer">21 Delmont</a>
+                            </Card.Title>
+                            <Card.Text>
+                                Property management site, streamlining property management,maintenance and tenant interaction.
+                            </Card.Text>
+                            
+                        </Card.ImgOverlay>
+                        
+                        
                     </Card>
-                    <Card>
-                        <Card.Img variant="top" src="./assets/images/vinoFinder.png" />
-                        <Card.Body>
-                        <Card.Title>Vino Finder</Card.Title>
-                        <Card.Text>
-                            Fun experiment using Bootstrap and Node.js to implement a "best wine" survey 
-                        </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                        <a href="https://blooming-dawn-99139.herokuapp.com/">Visit Site</a>
-                        </Card.Footer>
+                    <Card className="bg-dark text-white">
+                        <Card.Img src="./assets/images/vinoFinder.png" alt="Vino Finder" />
+                        <Card.ImgOverlay>
+                            <Card.Title>
+                                <a href="https://blooming-dawn-99139.herokuapp.com/" target='_blank' rel="noopener noreferrer">Vino Finder</a>
+                            </Card.Title>
+                            <Card.Text>
+                                Fun experiment using Bootstrap and Node.js to implement a "best wine" survey
+                            </Card.Text>
+                        </Card.ImgOverlay>
+                        
                     </Card>
+
+                    
                 </CardDeck>
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                <a href='https://github.com/ovie4' className='btn btn-primary' target="_blank" rel="noopener noreferrer">My Github</a>
             </Col>
         </Row>
     </Container>

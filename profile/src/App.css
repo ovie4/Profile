@@ -5,9 +5,10 @@
   
 }
 
-.allPages{
+.jumbotron{
   background-image: url("./utils/backgrounds/vitalis-hirschmann-504920-unsplash.jpg");
-  background-size: contain
+  background-size: contain;
+  margin-bottom: 0;
 }
 
 

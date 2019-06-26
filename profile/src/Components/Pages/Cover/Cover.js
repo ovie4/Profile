@@ -32,9 +32,9 @@ const Cover=props=>(
                                 </Card.ImgOverlay>
                             </Card> */}
                             <h1 className='header justify-content-center'><i>Ovie Omene</i></h1>
-                                <Button variant="primary" size="lg" className="downButton justify-content-right" onClick={props.handleButton}>
-                                    <span>&#8623;</span>
-                                </Button>
+                            <a href="#profile" size="lg" className="downButton btn btn-primary justify-content-right" onClick={props.handleButton} style={{padding:'10px 20px', fontSize:'30px'}}>
+                                <span>&#8623;</span>
+                            </a>
                     </Container>
                 </div>
             

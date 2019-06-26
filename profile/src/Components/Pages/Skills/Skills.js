@@ -3,8 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {flatten, times} from 'lodash';
+import "./Skills.css";
 
 class Skills extends Component{
+
+    setRating=(num)=>
+        flatten(times(num, (index) => (<span key={index}>&#9733;</span>))).map(dot => dot)
+    
 
 
     render(){
@@ -13,14 +18,19 @@ class Skills extends Component{
         <Container className="container">
             <Row>
                 <Col>
+                    <h3><i>Skills</i></h3>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
                     <ul>
                         <li>
                             <Row>
                                 <Col>
                                     HTML 
                                 </Col>
-                                <Col>
-                                    {flatten(times(5, (index) => (<span key={index}>&#9733;</span>))).map(dot => dot)}
+                                <Col className="ratings">
+                                    {this.setRating(5)}
                                 </Col>
                             </Row>
                         </li>
@@ -29,8 +39,8 @@ class Skills extends Component{
                                 <Col>
                                     CSS 
                                 </Col>
-                                <Col>
-                                    {flatten(times(5, (index) => (<span key={index}>&#9733;</span>))).map(dot => dot)}
+                                <Col className="ratings">
+                                    {this.setRating(5)}
                                 </Col>
                             </Row>
                         </li>
@@ -39,8 +49,8 @@ class Skills extends Component{
                                 <Col>
                                     Javascript 
                                 </Col>
-                                <Col>
-                                    {flatten(times(5, (index) => (<span key={index}>&#9733;</span>))).map(dot => dot)}
+                                <Col className="ratings">
+                                    {this.setRating(5)}
                                 </Col>
                             </Row>
                         </li>
@@ -49,8 +59,78 @@ class Skills extends Component{
                                 <Col>
                                     jQuery 
                                 </Col>
+                                <Col className="ratings">
+                                    {this.setRating(5)}
+                                </Col>
+                            </Row>
+                        </li>
+                        <li>
+                            <Row>
                                 <Col>
-                                    {flatten(times(5, (index) => (<span key={index}>&#9733;</span>))).map(dot => dot)}
+                                    React
+                                </Col>
+                                <Col className="ratings">
+                                    {this.setRating(3)}
+                                </Col>
+                            </Row>
+                        </li>
+                        <li>
+                            <Row>
+                                <Col>
+                                    Bootstrap
+                                </Col>
+                                <Col className="ratings">
+                                    {this.setRating(3)}
+                                </Col>
+                            </Row>
+                        </li>
+                        <li>
+                            <Row>
+                                <Col>
+                                    MySQL
+                                </Col>
+                                <Col className="ratings">
+                                    {this.setRating(3)}
+                                </Col>
+                            </Row>
+                        </li>
+                        <li>
+                            <Row>
+                                <Col>
+                                    mongoDB
+                                </Col>
+                                <Col className="ratings">
+                                    {this.setRating(4)}
+                                </Col>
+                            </Row>
+                        </li>
+                        <li>
+                            <Row>
+                                <Col>
+                                    Java
+                                </Col>
+                                <Col className="ratings">
+                                    {this.setRating(2)}
+                                </Col>
+                            </Row>
+                        </li>
+                        <li>
+                            <Row>
+                                <Col>
+                                    Object Oriented Programming
+                                </Col>
+                                <Col className="ratings">
+                                    {this.setRating(3)}
+                                </Col>
+                            </Row>
+                        </li>
+                        <li>
+                            <Row>
+                                <Col>
+                                    Github
+                                </Col>
+                                <Col className="ratings">
+                                    {this.setRating(4)}
                                 </Col>
                             </Row>
                         </li>
@@ -63,8 +143,8 @@ class Skills extends Component{
                                 <Col>
                                     Leadership 
                                 </Col>
-                                <Col>
-                                    {flatten(times(5, (index) => (<span key={index}>&#9733;</span>))).map(dot => dot)}
+                                <Col className="ratings">
+                                    {this.setRating(5)}
                                 </Col>
                             </Row>
                         </li>
@@ -73,8 +153,8 @@ class Skills extends Component{
                                 <Col>
                                     Problem Solving 
                                 </Col>
-                                <Col>
-                                    {flatten(times(5, (index) => (<span key={index}>&#9733;</span>))).map(dot => dot)} 
+                                <Col className="ratings">
+                                    {this.setRating(5)} 
                                 </Col>
                             </Row>
                         </li>
@@ -83,19 +163,25 @@ class Skills extends Component{
                                 <Col>
                                     Management 
                                 </Col>
+                                <Col className="ratings">
+                                    {this.setRating(5)}
+                                </Col>
+                            </Row>
+                        </li>
+                        <li>
+                            <Row>
                                 <Col>
-                                    {flatten(times(5, (index) => (<span key={index}>&#9733;</span>))).map(dot => dot)}
+                                    Creativity
+                                </Col>
+                                <Col className="ratings">
+                                    {this.setRating(3)}
                                 </Col>
                             </Row>
                         </li>
                     </ul>
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                    <strong><i>Some cool stuff I've done</i></strong>
-                </Col>
-            </Row>
+            
         </Container>
         )
     }

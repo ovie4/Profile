@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React,{Component, createRef} from 'react';
 import './App.css';
 import {Row,Col,Jumbotron} from 'react-bootstrap';
 import { BrowserRouter as Router} from "react-router-dom";
@@ -9,6 +9,7 @@ import Skills from "./Components/Pages/Skills";
 import Projects from './Components/Pages/Projects';
 import Contact from './Components/Pages/Contact';
 import SideNav from './Components/SideNav';
+import scrollToComponent from 'react-scroll-to-component';
 
 
 
@@ -21,17 +22,21 @@ class App extends Component{
     }
     
   }
-  
+  profileComponent = createRef();
 
   handleButton=()=>{
     this.setState({style:{display:'block'}});
     //scroll to profile
-  };
-
-  handleNav=eKey=>{
-    console.log(eKey);
-    
+    console.log(this.profileComponent.current);
+  //   this.profileComponent.current.scrollIntoView({ 
+  //     behavior: "smooth" 
+  //  });
+//    window.scrollTop(
+//     this.profileComponent.current.offsetHeight().top - window.offset().top + window.scrollTop()
+// );
+// window.scrollByPages(1);
   }
+
 
 
   render(){
@@ -41,12 +46,14 @@ class App extends Component{
           handleButton={this.handleButton}>
         </Cover>
         <Router>
-          <Jumbotron fluid style={this.state.style}>
+          <Jumbotron style={this.state.style}>
             <Row className='allPages'>
               <Col sm={10}>
-                <Row id='profile'>
+                <Row id='profile' >
                   <Col>
+                    <div ref={this.profileComponent}>
                     <Profile></Profile>
+                    </div>
                   </Col>
                 </Row>
                 <Row id='experience'>

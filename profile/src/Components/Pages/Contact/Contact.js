@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Figure from 'react-bootstrap/Figure';
 import * as emailjs from 'emailjs-com';
+import "./Contact.css";
 
 class Contact extends Component{
     
