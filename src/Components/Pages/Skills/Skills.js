@@ -30,7 +30,7 @@ class Skills extends Component{
                                     HTML 
                                 </Col>
                                 <Col className="ratings">
-                                    {this.setRating(5)}
+                                    {this.setRating(4)}
                                 </Col>
                             </Row>
                         </li>
@@ -40,7 +40,7 @@ class Skills extends Component{
                                     CSS 
                                 </Col>
                                 <Col className="ratings">
-                                    {this.setRating(5)}
+                                    {this.setRating(4)}
                                 </Col>
                             </Row>
                         </li>
@@ -50,7 +50,7 @@ class Skills extends Component{
                                     Javascript 
                                 </Col>
                                 <Col className="ratings">
-                                    {this.setRating(5)}
+                                    {this.setRating(4)}
                                 </Col>
                             </Row>
                         </li>
@@ -60,7 +60,7 @@ class Skills extends Component{
                                     jQuery 
                                 </Col>
                                 <Col className="ratings">
-                                    {this.setRating(5)}
+                                    {this.setRating(4)}
                                 </Col>
                             </Row>
                         </li>
@@ -100,7 +100,7 @@ class Skills extends Component{
                                     mongoDB
                                 </Col>
                                 <Col className="ratings">
-                                    {this.setRating(4)}
+                                    {this.setRating(3)}
                                 </Col>
                             </Row>
                         </li>
@@ -110,7 +110,7 @@ class Skills extends Component{
                                     Java
                                 </Col>
                                 <Col className="ratings">
-                                    {this.setRating(2)}
+                                    {this.setRating(1)}
                                 </Col>
                             </Row>
                         </li>
@@ -130,7 +130,7 @@ class Skills extends Component{
                                     Github
                                 </Col>
                                 <Col className="ratings">
-                                    {this.setRating(4)}
+                                    {this.setRating(3)}
                                 </Col>
                             </Row>
                         </li>
@@ -175,6 +175,16 @@ class Skills extends Component{
                                 </Col>
                                 <Col className="ratings">
                                     {this.setRating(3)}
+                                </Col>
+                            </Row>
+                        </li>
+                        <li>
+                            <Row>
+                                <Col>
+                                    Self-Motivation
+                                </Col>
+                                <Col className="ratings">
+                                    {this.setRating(5)}
                                 </Col>
                             </Row>
                         </li>
