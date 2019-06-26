@@ -1,0 +1,37 @@
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: sepia(80%)
+  }
+
+  .overlay { 
+    color:#fff;
+    position:absolute;
+    z-index:12;
+    left:0;
+    right:0;
+    width:100%;
+    text-align:center;
+  }
+
+.header{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.7em
+}
+  .downButton{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    scroll-behavior: smooth
+  }
+
+  
+  
