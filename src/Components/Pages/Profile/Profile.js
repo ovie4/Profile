@@ -20,7 +20,7 @@ const Profile=props=>(
                 <h4><u>About Me</u></h4>
                 <section id='aboutMe'>
                     <p>I'm a developer with a background in engineering.</p>
-                    <p>I love entrepreneurship and worked really hard to build a real estate investment portfolio, but I am incredibly passionate about the endless possibilities programming gives me, and the opportunity to bring almost any vision to life!</p>
+                    <p>I love entrepreneurship and worked really hard to build a real estate investment portfolio, but I have also become incredibly passionate about coding's endless possibilities, and the opportunity to bring almost any vision to life!</p>
                     <p>I've lived on 3 continents, have been lucky enough to have lots of diverse experiences, and am looking forward to wherever my journey takes me next!</p>
                 </section>
             </Col>
