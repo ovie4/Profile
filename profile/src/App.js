@@ -9,7 +9,6 @@ import Skills from "./Components/Pages/Skills";
 import Projects from './Components/Pages/Projects';
 import Contact from './Components/Pages/Contact';
 import SideNav from './Components/SideNav';
-import scrollToComponent from 'react-scroll-to-component';
 
 
 
